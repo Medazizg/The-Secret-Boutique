@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Secret Boutique — Bespoke Journeys</title>
+  <meta name="description" content="The Secret Boutique: Curated, high-end travel experiences and private tours." />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css/style.css" />
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  
+  <script src="js/main.js" type="module" defer></script>
+  <script src="js/animations.js" type="module" defer></script>
+</head>
+<body class="theme-dark">
+  
+  <div id="overlay" class="overlay">
+    <button class="overlay__close" aria-label="Close menu" data-overlay-close>&times;</button>
+    <nav class="overlay__nav">
+      <a href="index.html">Home</a>
+      <a href="tour.html">Signature Tour</a>
+      <a href="#gifts">Gifting</a>
+      <a href="#categories">Collections</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </div>
+
+  
+  <header class="site-header container">
+    <a class="brand" href="index.html" aria-label="The Secret Boutique">
+      <img src="assets/logo.svg" alt="The Secret Boutique" height="36" />
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" data-overlay-open>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  
+  <section class="hero container">
+    <div class="hero__content">
+      <h1 class="display">Bespoke Journeys<br />for the Discerning Traveler</h1>
+      <p class="lead">Discover curated escapes, private access, and moments wrapped in quiet luxury.</p>
+      <div class="hero__actions">
+        <a href="tour.html" class="btn btn--gold">Explore Signature Tour</a>
+        <a href="#gifts" class="btn btn--ghost">Gifting</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1543340713-8a92156c022a?q=80&w=1600&auto=format&fit=crop" alt="Luxury travel" />
+    </div>
+  </section>
+
+  
+  <section id="gifts" class="section container">
+    <header class="section__head">
+      <h2 class="h2">Gifts of Travel</h2>
+      <p>Three thoughtful ways to elevate someone’s next escape.</p>
+    </header>
+    <div class="cards">
+      <article class="card">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?q=80&w=1200&auto=format&fit=crop" alt="Private Retreats" />
+        </div>
+        <div class="card__body">
+          <h3 class="h4">Private Retreats</h3>
+          <p>Secluded villas, discreet service, and tailored itineraries.</p>
+          <a class="link" href="tour.html">Discover</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" alt="Culinary Passports" />
+        </div>
+        <div class="card__body">
+          <h3 class="h4">Culinary Passports</h3>
+          <p>Chef’s tables, vineyard tastings, and hidden gastronomic gems.</p>
+          <a class="link" href="tour.html">Savor</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__media">
+          <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop" alt="Cultural Access" />
+        </div>
+        <div class="card__body">
+          <h3 class="h4">Cultural Access</h3>
+          <p>After-hours museum tours and private ateliers by appointment.</p>
+          <a class="link" href="tour.html">Enter</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  
+  <section id="categories" class="section container section--alt">
+    <header class="section__head">
+      <h2 class="h2">Tour Collections</h2>
+      <p>Four ways to wander with intention.</p>
+    </header>
+    <div class="grid-4">
+      <a class="box" href="tour.html">
+        <div class="box__media"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="City" /></div>
+        <h3 class="h5">City Signatures</h3>
+      </a>
+      <a class="box" href="tour.html">
+        <div class="box__media"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Coast" /></div>
+        <h3 class="h5">Coastal Escapes</h3>
+      </a>
+      <a class="box" href="tour.html">
+        <div class="box__media"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Culture" /></div>
+        <h3 class="h5">Culture & Craft</h3>
+      </a>
+      <a class="box" href="tour.html">
+        <div class="box__media"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1200&auto=format&fit=crop" alt="Nature" /></div>
+        <h3 class="h5">Nature & Wellness</h3>
+      </a>
+    </div>
+  </section>
+
+  
+  <footer id="footer" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="The Secret Boutique" height="28" />
+        <p class="muted">Curated experiences, quietly extraordinary.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="tour.html">Signature Tour</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <div class="footer__meta">
+        <p>© <span data-year></span> The Secret Boutique</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

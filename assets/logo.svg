@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="220" height="36" viewBox="0 0 220 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="220" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9A34A"/>
+      <stop offset="1" stop-color="#D9B75D"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="219" height="35" rx="8" stroke="url(#g)" fill="transparent"/>
+  <text x="16" y="24" fill="url(#g)" font-family="'Playfair Display', serif" font-size="18">The Secret Boutique</text>
+</svg>

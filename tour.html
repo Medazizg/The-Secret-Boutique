@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Signature Tour — The Secret Boutique</title>
+  <meta name="description" content="Signature Tour by The Secret Boutique: a refined journey with private access and curated moments." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
+  <!-- App Scripts -->
+  <script src="js/main.js" type="module" defer></script>
+  <script src="js/animations.js" type="module" defer></script>
+</head>
+<body class="theme-dark">
+  <!-- Overlay Menu -->
+  <div id="overlay" class="overlay">
+    <button class="overlay__close" aria-label="Close menu" data-overlay-close>&times;</button>
+    <nav class="overlay__nav">
+      <a href="index.html">Home</a>
+      <a href="tour.html">Signature Tour</a>
+      <a href="index.html#gifts">Gifting</a>
+      <a href="index.html#categories">Collections</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header container">
+    <a class="brand" href="index.html" aria-label="The Secret Boutique">
+      <img src="assets/logo.svg" alt="The Secret Boutique" height="36" />
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" data-overlay-open>
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero Tour -->
+  <section class="hero hero--tour container">
+    <div class="hero__content">
+      <h1 class="display">Signature Tour</h1>
+      <p class="lead">A three-night immersion featuring private ateliers, vineyard tastings, and after-hours museums.</p>
+      <div class="hero__actions">
+        <a href="#availability" class="btn btn--gold">Check Availability</a>
+      </div>
+    </div>
+    <div class="hero__media hero__media--video">
+      <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?q=80&w=1600&auto=format&fit=crop" alt="Tour hero" />
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section container">
+    <header class="section__head">
+      <h2 class="h2">Gallery</h2>
+      <p>A glimpse into the journey.</p>
+    </header>
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Coast" /></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop" alt="Culture" /></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?q=80&w=1200&auto=format&fit=crop" alt="Retreat" /></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" alt="Cuisine" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <!-- Itinerary -->
+  <section class="section container">
+    <header class="section__head">
+      <h2 class="h2">Itinerary</h2>
+      <p>Designed with generous pacing and refined detail.</p>
+    </header>
+    <div class="itinerary">
+      <div class="itinerary__day">
+        <h3 class="h4">Day 1 — Arrival & Aperitivo</h3>
+        <p>Private transfer, boutique check-in, and a sunset aperitivo with your host curator.</p>
+      </div>
+      <div class="itinerary__day">
+        <h3 class="h4">Day 2 — Atelier & Cellar</h3>
+        <p>Morning private atelier visit; afternoon vineyard cellar with reserve tasting and chef’s table.</p>
+      </div>
+      <div class="itinerary__day">
+        <h3 class="h4">Day 3 — After-hours Museum</h3>
+        <p>Leisurely morning, spa ritual; evening after-hours museum tour and candlelit dinner.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability Form -->
+  <section id="availability" class="section container section--alt">
+    <header class="section__head">
+      <h2 class="h2">Check Availability</h2>
+      <p>Share a few details and we’ll be in touch within 24 hours.</p>
+    </header>
+    <form id="availabilityForm" class="form">
+      <div class="form__row">
+        <label>
+          <span>Full Name</span>
+          <input type="text" name="name" placeholder="Alexandra Smith" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+      </div>
+      <div class="form__row">
+        <label>
+          <span>Preferred Dates</span>
+          <input type="text" name="dates" placeholder="e.g., May 18–21" />
+        </label>
+        <label>
+          <span>Guests</span>
+          <input type="number" name="guests" min="1" max="12" value="2" />
+        </label>
+      </div>
+      <label>
+        <span>Notes</span>
+        <textarea name="notes" rows="4" placeholder="Any special preferences?"></textarea>
+      </label>
+      <div class="form__actions">
+        <button type="submit" class="btn btn--gold">Request Availability</button>
+        <p class="muted">This is a demo form. No data is sent.</p>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.svg" alt="The Secret Boutique" height="28" />
+        <p class="muted">Curated experiences, quietly extraordinary.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="index.html">Home</a>
+        <a href="tour.html">Signature Tour</a>
+        <a href="#">Privacy</a>
+      </nav>
+      <div class="footer__meta">
+        <p>© <span data-year></span> The Secret Boutique</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
