@@ -4,11 +4,16 @@ A responsive front-end demo for a high-end travel boutique featuring elegant des
 
 ## Features
 
+- **Enhanced Navigation Bar**: Desktop navigation with active link highlighting and smooth scroll
+- **Featured Banner**: Eye-catching hero banner with luxury travel imagery and overlay effects
 - **Responsive Design**: Mobile-friendly layout with elegant gold/black theme
 - **GSAP Animations**: Smooth fade-ins, scroll reveals, and overlay menu transitions
 - **Swiper Gallery**: Interactive image gallery on tour page
 - **Overlay Menu**: Full-screen navigation with smooth animations
 - **Modern UI**: Playfair Display serif fonts, clean layout, professional styling
+- **Interactive Elements**: Hover effects on cards, buttons, and navigation links
+- **Statistics Section**: Showcasing key metrics with elegant styling
+- **Smooth Scrolling**: Native smooth scroll behavior for anchor links
 
 ## Pages
 

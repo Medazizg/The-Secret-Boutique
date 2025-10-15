@@ -36,27 +36,65 @@
   </div>
 
   
-  <header class="site-header container">
-    <a class="brand" href="index.html" aria-label="The Secret Boutique">
-      <img src="assets/logo.svg" alt="The Secret Boutique" height="36" />
-    </a>
-    <button class="menu-toggle" aria-label="Open menu" data-overlay-open>
-      <span></span><span></span><span></span>
-    </button>
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="brand" href="index.html" aria-label="The Secret Boutique">
+        <img src="assets/logo.svg" alt="The Secret Boutique" height="36" />
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="tour.html" class="nav-link">Signature Tour</a>
+        <a href="#gifts" class="nav-link">Gifting</a>
+        <a href="#categories" class="nav-link">Collections</a>
+        <a href="#footer" class="nav-link">Contact</a>
+      </nav>
+      
+      <button class="menu-toggle" aria-label="Open menu" data-overlay-open>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
+  
+  <!-- Featured Image Banner -->
+  <section class="featured-banner">
+    <div class="featured-banner__overlay"></div>
+    <img src="assets/15 Awesome Hikes in Interlaken (& Nearby).jpeg" alt="Luxury travel" class="featured-banner__image" />
+    <div class="featured-banner__content container">
+      <span class="featured-banner__label">Featured Destination</span>
+      <h2 class="featured-banner__title">Discover Extraordinary Escapes</h2>
+      <p class="featured-banner__text">Curated luxury experiences in the world's most exclusive destinations</p>
+    </div>
+  </section>
 
   
   <section class="hero container">
     <div class="hero__content">
+      <span class="hero__badge">✨ Exclusive Experiences</span>
       <h1 class="display">Bespoke Journeys<br />for the Discerning Traveler</h1>
-      <p class="lead">Discover curated escapes, private access, and moments wrapped in quiet luxury.</p>
+      <p class="lead">Discover curated escapes, private access, and moments wrapped in quiet luxury. Each journey is meticulously crafted to exceed expectations.</p>
       <div class="hero__actions">
         <a href="tour.html" class="btn btn--gold">Explore Signature Tour</a>
         <a href="#gifts" class="btn btn--ghost">Gifting</a>
       </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__number">500+</span>
+          <span class="stat__label">Curated Experiences</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">50+</span>
+          <span class="stat__label">Destinations</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">98%</span>
+          <span class="stat__label">Satisfaction Rate</span>
+        </div>
+      </div>
     </div>
     <div class="hero__media">
-      <img src="https://images.unsplash.com/photo-1543340713-8a92156c022a?q=80&w=1600&auto=format&fit=crop" alt="Luxury travel" />
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1600&auto=format&fit=crop" alt="Luxury hotel suite" />
     </div>
   </section>
 

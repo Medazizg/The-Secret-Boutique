@@ -12,6 +12,57 @@ overlay?.addEventListener('click', (e) => {
 
 document.querySelectorAll('.overlay__nav a').forEach(a => a.addEventListener('click', () => overlay.classList.remove('open')));
 
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href === '#' || href === '') return;
+    
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      overlay.classList.remove('open');
+    }
+  });
+});
+
+// Active navigation highlighting
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section[id]');
+
+function updateActiveNav() {
+  const scrollY = window.pageYOffset;
+  
+  sections.forEach(section => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 100;
+    const sectionId = section.getAttribute('id');
+    
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${sectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+  
+  // Highlight home when at top
+  if (scrollY < 300) {
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === 'index.html') {
+        link.classList.add('active');
+      }
+    });
+  }
+}
+
+window.addEventListener('scroll', updateActiveNav);
+window.addEventListener('load', updateActiveNav);
+
 // Footer year
 const yearEl = document.querySelector('[data-year]');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
